@@ -1,6 +1,8 @@
 import NextLink from 'next/link'
 import useStyles from '../src/styles'
-import { AppBar, Link, Toolbar, Typography } from '@mui/material'
+import { AppBar, createTheme, Link, Toolbar, Typography } from '@mui/material'
+import { useContext } from 'react'
+import { Store } from '../src/Store'
 
 export default function Header() {
 	const classes = useStyles()
@@ -11,7 +13,7 @@ export default function Header() {
 				<NextLink href='/' passHref>
 					<Link>
 						<Typography className={classes.brand}>
-							Superstore
+							About*me
 						</Typography>
 					</Link>
 				</NextLink>

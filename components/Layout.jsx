@@ -4,13 +4,16 @@ import Header from '../components/Header'
 import Footer from './Footer'
 import useStyles from '../src/styles'
 
-export default function Layout({ children }) {
+export default function Layout({ children, title, description }) {
 	const classes = useStyles()
 
 	return (
 		<div>
 			<Head>
-				<title>Superstore</title>
+				<title>{title ? `${title} - AboutMe` : 'AboutMe'}</title>
+				{description && (
+					<meta name='description' description={description} />
+				)}
 			</Head>
 			<Header />
 
