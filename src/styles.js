@@ -10,7 +10,10 @@ const useStyles = makeStyles({
     },
     main: {
         minHeight: '85vh',
-    }
+    },
+    footer: {
+        textAlign: 'center',
+    },
 })
 
 export default useStyles

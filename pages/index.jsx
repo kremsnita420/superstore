@@ -1,14 +1,11 @@
 import Layout from '../components/Layout'
+import ProductList from '../components/ProductList'
 
 export default function HomePage() {
 	return (
 		<Layout>
 			<h1>Products</h1>
-			<ul>
-				<li>Product 1</li>
-				<li>Product 2</li>
-				<li>Product 2</li>
-			</ul>
+			<ProductList />
 		</Layout>
 	)
 }
